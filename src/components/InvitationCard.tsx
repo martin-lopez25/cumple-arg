@@ -19,10 +19,10 @@ function InvitationCard({ data }: InvitationCardProps) {
       {!opened ? (
         <div className="fade-in relative z-10 flex flex-col items-center gap-8">
           <div className="mb-2 text-center">
-            <p className="mb-3 text-xs tracking-[0.3em] text-yellow-300/70 font-sci-fi sm:text-sm">
+            <p className="mb-3 text-sm tracking-[0.22em] text-yellow-300/70 font-sci-fi sm:text-sm">
               HACE MUCHO TIEMPO EN UNA GALAXIA MUY LEJANA...
             </p>
-            <p className="floating-invite-text text-xs tracking-[0.28em] text-cyan-200/80 font-sci-fi sm:text-sm">
+            <p className="floating-invite-text text-sm tracking-[0.2em] text-cyan-200/80 font-sci-fi sm:text-sm">
               UNA INVITACION TE HA SIDO ENVIADA
             </p>
             <div className="sw-logo-intro-match" dangerouslySetInnerHTML={{ __html: STAR_WARS_LOGO }} />
@@ -48,7 +48,7 @@ function InvitationCard({ data }: InvitationCardProps) {
             />
           </div>
 
-          <p className="text-xs tracking-widest text-white/45 font-sci-fi">
+          <p className="text-sm tracking-[0.16em] text-white/55 font-sci-fi sm:text-xs">
             TOCA EL SOBRE PARA ABRIR LA TRANSMISION
           </p>
         </div>
@@ -56,7 +56,7 @@ function InvitationCard({ data }: InvitationCardProps) {
         <div className="fade-in relative z-10 flex w-full max-w-3xl flex-col items-center gap-8">
           <div className="text-center">
             <div className="sw-logo-intro-match sw-logo-intro-match-small" dangerouslySetInnerHTML={{ __html: STAR_WARS_LOGO }} />
-            <p className="text-xs tracking-[0.3em] text-yellow-300/80 font-sci-fi sm:text-sm">
+            <p className="text-sm tracking-[0.22em] text-yellow-300/80 font-sci-fi sm:text-sm">
               {data.episode.toUpperCase()} · {data.title.toUpperCase()}
             </p>
           </div>
@@ -82,21 +82,21 @@ function InvitationCard({ data }: InvitationCardProps) {
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="flex flex-col items-center gap-1 text-center">
                 <Calendar size={20} className="mb-1 text-yellow-300/80" />
-                <span className="text-xs tracking-widest text-yellow-300/70 font-sci-fi">
+                <span className="text-sm tracking-[0.16em] text-yellow-300/75 font-sci-fi sm:text-xs">
                   FECHA
                 </span>
                 <span className="text-sm text-white">{data.date}</span>
               </div>
               <div className="flex flex-col items-center gap-1 text-center sm:border-x sm:border-white/10">
                 <Clock size={20} className="mb-1 text-yellow-300/80" />
-                <span className="text-xs tracking-widest text-yellow-300/70 font-sci-fi">
+                <span className="text-sm tracking-[0.16em] text-yellow-300/75 font-sci-fi sm:text-xs">
                   HORA
                 </span>
                 <span className="text-sm text-white">{data.time}</span>
               </div>
               <div className="flex flex-col items-center gap-1 text-center">
                 <MapPin size={20} className="mb-1 text-yellow-300/80" />
-                <span className="text-xs tracking-widest text-yellow-300/70 font-sci-fi">
+                <span className="text-sm tracking-[0.16em] text-yellow-300/75 font-sci-fi sm:text-xs">
                   LUGAR
                 </span>
                 <span className="text-sm text-white">{data.location}</span>

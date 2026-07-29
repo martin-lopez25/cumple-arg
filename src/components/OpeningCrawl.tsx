@@ -182,12 +182,16 @@ function OpeningCrawl({ onComplete }: OpeningCrawlProps) {
         .intro {
           position: absolute;
           top: 30%;
-          left: 35%;
+          left: 50%;
+          transform: translateX(-50%);
           z-index: 1;
           animation: intro 6s ease-out 1s;
           color: rgb(75, 213, 238);
           font-weight: 400;
-          font-size: 300%;
+          font-size: clamp(1.4rem, 4.8vw, 3rem);
+          width: min(90vw, 26ch);
+          text-align: center;
+          line-height: 1.2;
           opacity: 0;
         }
 
@@ -209,9 +213,11 @@ function OpeningCrawl({ onComplete }: OpeningCrawlProps) {
         .logo {
           position: absolute;
           top: 20%;
-          left: 45%;
+          left: 50%;
           z-index: 1;
-          margin: auto;
+          margin: 0;
+          width: min(76vw, 18em);
+          transform: translateX(-50%);
           animation: logo 9s ease-out 9s;
           opacity: 0;
         }
@@ -222,18 +228,18 @@ function OpeningCrawl({ onComplete }: OpeningCrawlProps) {
 
         @keyframes logo {
           0% {
-            width: 18em;
-            transform: scale(2.75);
+            width: min(76vw, 18em);
+            transform: translateX(-50%) scale(2.75);
             opacity: 1;
           }
           50% {
             opacity: 1;
-            width: 18em;
+            width: min(76vw, 18em);
           }
           100% {
             opacity: 0;
-            transform: scale(0.1);
-            width: 18em;
+            transform: translateX(-50%) scale(0.1);
+            width: min(76vw, 18em);
           }
         }
 
@@ -250,11 +256,12 @@ function OpeningCrawl({ onComplete }: OpeningCrawlProps) {
           margin-left: -9em;
           font-weight: bold;
           overflow: hidden;
-          font-size: 350%;
+          font-size: clamp(1.65rem, 6.4vw, 3.5rem);
           height: 50em;
           width: 18em;
           bottom: 0;
           left: 50%;
+          line-height: 1.24;
         }
 
         #board:after {
@@ -282,6 +289,27 @@ function OpeningCrawl({ onComplete }: OpeningCrawlProps) {
           }
           100% {
             top: -170%;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .intro {
+            top: 28%;
+            width: min(92vw, 24ch);
+            font-size: clamp(1.15rem, 5.2vw, 1.5rem);
+          }
+
+          .logo {
+            top: 17%;
+            width: min(84vw, 16em);
+          }
+
+          #board {
+            width: 14.2em;
+            margin-left: -7.1em;
+            height: 56em;
+            font-size: clamp(1.5rem, 6.8vw, 2.35rem);
+            transform: perspective(240px) rotateX(22deg);
           }
         }
       `}</style>
