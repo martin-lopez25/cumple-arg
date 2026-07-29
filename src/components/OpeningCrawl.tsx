@@ -331,7 +331,7 @@ function OpeningCrawl({ onComplete }: OpeningCrawlProps) {
             La galaxia celebra un acontecimiento extraordinario.
           </p>
           <p>
-            Tras 39 años de aventura, victorias, risas y misiones cumplidas, el comandante Armando ha convocado a su escuadron del bienestar para celebrar en el roof el dia jueves 30 de julio a las 2 pm una reunion que quedara registrada en los archivos de la republica.
+            Tras 39 años de aventura, victorias, risas y misiones cumplidas, el comandante Armando ha convocado a su escuadrón del bienestar para celebrar en el roof el día jueves 30 de julio a las 2:30 pm una reunión que quedará registrada en los archivos de la república.
           </p>
           <p>
             Tu presencia sera esencial para mantener el equilibrio de la fuerza. Que la fuerza te acompañe... y no faltes.
