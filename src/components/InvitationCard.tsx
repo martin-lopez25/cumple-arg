@@ -3,6 +3,7 @@ import { MapPin, Clock, Calendar, Star, Sparkles } from 'lucide-react';
 import Starfield from '@/components/Starfield';
 import { LOGO_SVG as STAR_WARS_LOGO } from '@/components/OpeningCrawl';
 import type { InvitationData } from '@/types/invitation';
+import envelopeImage from '@/assets/invitation-envelope.jpeg';
 
 type InvitationCardProps = {
   data: InvitationData;
@@ -41,7 +42,7 @@ function InvitationCard({ data }: InvitationCardProps) {
             aria-label="Abrir invitacion"
           >
             <img
-              src="/video/WhatsApp Image 2026-07-29 at 1.00.54 PM.jpeg"
+              src={envelopeImage}
               alt="Sobre de invitacion"
               className="floating-envelope-image"
             />
